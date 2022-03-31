@@ -1,0 +1,51 @@
+
+/* MENU DO HEADER */
+.header-nav-bar-desktop{
+    height: 44px;
+    background: var(--light-blue);
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+
+.header-options-wrapper{
+    list-style: none;
+    margin-left: 110px;
+    color: var(--white);
+    
+}
+
+.header-links-wrapper{
+  display: flex;
+}
+
+
+.menu-first-option{
+    margin-right: 126px;
+    
+}
+.menu-first-option,
+.menu-second-option{
+  cursor: pointer;
+  transition: .3s linear;
+}
+
+.menu-first-option:hover,
+.menu-second-option:hover{
+  filter: brightness(30%);
+}
+.menu-first-option:active,
+.menu-second-option:active{
+  filter: brightness(80%);
+}
+
+
+
+@media screen and (max-width: 768px){
+
+    .header-nav-bar-desktop{
+      display: none;
+    }
+  
+  }

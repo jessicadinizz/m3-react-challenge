@@ -1,0 +1,160 @@
+@import './MenuDesktop.css';
+@import './MenuMobile.css';
+
+
+/* Todo o header (fundo) */
+    .page-header{
+        background: var(--light-blue);
+        height: 75px;
+        display: flex;
+        align-items: center;
+        
+        border-bottom: solid 1px var(--gray-300);
+    }
+
+  .page-header-wrapper{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+  
+  }  
+
+/* logo do header */
+  .header-logo{
+      cursor: pointer;
+  }
+
+
+/* barra de pesquisa */
+  .search-bar-wrapper-1{
+      position: relative;
+  }
+
+  .search-bar-1{
+      width: 264px;
+      height: 32px;
+      border-radius: 5px;
+
+      border: 0;
+      outline: 0;
+
+      padding: 0 0 0 12px;
+  }
+
+  .search-bar-icon-1{
+      position: absolute;
+      right: 7px;
+      top: 22%;
+      cursor: pointer;
+  }
+
+.search-bar-wrapper-2{
+    position: relative;
+    display: none;
+}
+
+.search-bar-2{
+    width: 264px;
+    height: 32px;
+    border-radius: 5px;
+
+    border: 0;
+    outline: 0;
+
+    padding: 0 0 0 12px;
+}
+
+.search-bar-icon-2{
+    position: absolute;
+    right: 7px;
+    top: 22%;
+    cursor: pointer;
+}
+
+
+
+
+
+
+/* opções de entrar e carrinho */
+  .header-options{
+      display: flex;
+      align-items: center;
+      margin-left: 150px;
+  }
+
+  .login-option{
+      margin: 0 40px 0 0;
+
+      font-weight: 400;
+      color: var(--white);
+      cursor: pointer;
+      transition: .3s linear;
+  }
+@media screen and (min-width: 768px) {
+ 
+  .login-option:hover{
+    filter: brightness(30%);
+  }
+  .login-option:active{
+    filter: brightness(80%);
+  }
+  .cart-option{
+    transition: .3s linear;
+    cursor: pointer;
+  }
+  .cart-option:hover{
+    filter: brightness(30%);
+  }
+  .cart-option:active{
+    filter: brightness(80%);
+  } 
+}
+
+/* RESPONSIVIDADE DA PARTE DE CIMA DO HEADER */
+
+@media screen and (max-width: 768px){
+  .page-header{
+    height: 139px;
+    display: grid;
+  }
+
+  .page-header-wrapper{
+    justify-content: space-between;
+  }
+
+
+
+  .search-bar-wrapper-1{
+    display: none;
+  }
+
+  .header-options{
+    margin: 0;
+  }
+  .login-option{
+    display: none;
+  }
+  .cart-option{
+    margin-right: 24px;
+  }
+
+  .search-bar-wrapper-2{
+    display: flex;
+    justify-content: center;
+    padding: 0 15px;
+  }
+
+  .search-bar-icon-2{
+    right: 22px;
+  }
+
+  .search-bar-2{
+    width: 100%;
+  }
+
+}
+
+
+
+

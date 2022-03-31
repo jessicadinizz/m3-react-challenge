@@ -1,0 +1,132 @@
+.principal-content-wrapper{
+    margin-top: 45px;
+    display: flex;
+    justify-content: center;
+}
+
+.principal-options-wrapper{
+    border-right: 1px solid var(--gray-200);
+    width: 100%;
+    max-width: 239px;
+}
+
+
+
+.principal-option-none,
+.principal-option{
+    height: 40px;
+    width: 100%;
+    max-width: 239px;
+    display: flex;
+    align-items: center;
+    color: var(--gray-500);
+}
+
+.principal-option{
+    background-color: var(--light-blue);
+    color: var(--white);
+    font-weight: 700;
+    animation: fadeIn .7s ease-in;
+}
+
+@media screen and (min-width:768px){
+    .principal-option,
+    .principal-option-none{
+    transition: .3s linear;
+    cursor: pointer;
+}
+
+.principal-option:active,
+.principal-option-none:active{
+    filter:brightness(80%);
+}
+.principal-option:hover,
+.principal-option-none:hover{
+    filter:brightness(130%);
+}
+}
+
+.principal-option-text{
+    margin-left: 16px;
+}
+
+.sobre-text-show,
+.pagamento-text-show,
+.entrega-text-show,
+.troca-text-show,
+.seguranca-text-show,
+.contato-text-show{
+    display: block;
+    animation: fadeIn ease-in .7s;
+    margin-right: 50px;
+}
+
+
+.sobre-text-none,
+.pagamento-text-none,
+.entrega-text-none,
+.troca-text-none,
+.seguranca-text-none,
+.contato-text-none{
+    display: none;
+}
+
+.infos-content-wrapper{
+    width: 100%;
+    max-width: 715px;
+    margin-left: 30px;
+}
+.infos-content-wrapper-contato{
+    width: 715px;
+    display: flex;
+    justify-content: center;
+}
+
+.infos-description-wrapper{
+    width: 100%;
+    max-width: 715px;
+}
+
+.infos-content-wrapper p{
+    font-size: 13px;
+    line-height: 15px;
+    font-weight: 400;
+    color: var(--gray-500);
+    width: 100%;
+    max-width: 715px;
+}
+.infos-content-wrapper h2{
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--gray-900);
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+
+@media screen and (max-width: 768px){
+    .principal-content-wrapper{
+        display: grid;
+        margin: 0 20px;
+    }
+
+    .principal-options-wrapper{
+        border: none;
+        max-width: 768px;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        margin: 0 20px 40px;
+    }
+
+    .principal-option,
+    .principal-option-none{
+        width: 100%;
+        max-width: 700px;
+        margin-right: 20px;
+    }
+
+    .second-break{
+        display: none;
+    }
+}

@@ -1,0 +1,48 @@
+
+
+.header-all-options-open{
+    display: block;
+    animation: fadeIn ease-in .7s;
+  }
+  
+  .header-all-options-closed{
+      animation: fadeOut ease-out .7s;
+      display: none;
+  }
+  
+  .mobile-options-button{
+    display: none;
+  }
+
+
+  /* Responsividade */
+  @media (max-width: 768px) {
+    /* botao de opções mobile "hamburguer"*/
+   
+       .mobile-options-button {
+         display: flex;
+         padding: 0.5rem 1rem;
+         font-size: 1rem;
+         border: none;
+         background: none;
+         cursor: pointer;
+         gap: 0.5rem;
+         width: 20px;
+       }
+       .hamburger {
+         border-top: 2px solid;
+         width: 20px;
+       }
+       .hamburger::after,
+       .hamburger::before {
+         content: '';
+         display: block;
+         width: 20px;
+         height: 2px;
+         background: currentColor;
+         margin-top: 5px;
+         transition: 0.3s;
+         position: relative;
+       }
+ 
+     }

@@ -1,0 +1,37 @@
+.buttons-wrapper {
+    position: fixed;
+    bottom: 14px;
+    right: 14px;
+    z-index: 100;
+  }
+  
+  .whatsapp-button-wrapper {
+    cursor: pointer;
+  }
+.arrow-button{
+  cursor: pointer;
+}
+
+.arrow-button,
+.whatsapp-button{
+  transition: .2s linear;
+}
+
+  @media screen and (min-width: 768px){
+    .whatsapp-button:hover,
+    .arrow-button:hover{
+      filter: brightness(120%);
+    }
+    .arrow-button:active,
+    .whatsapp-button.active{
+      filter: brightness(80%);
+    }
+  }
+
+  
+  @media screen and (max-width: 768px) {
+    .buttons-wrapper {
+      bottom: 5px;
+      right: 3px;
+    }
+  }
